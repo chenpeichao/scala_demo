@@ -70,6 +70,5 @@ object Collection {
     println(mapTmp2)
     println(mapTmp2.isEmpty)
 
-    mapTmp.clone();
   }
 }
