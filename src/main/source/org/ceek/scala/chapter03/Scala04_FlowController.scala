@@ -13,6 +13,15 @@ object Scala04_FlowController {
     for (i <- 1 until 10) {
       print(i);
     }
+    println("")
+    for (i <- 0.until(10)) {
+      print("循环打印" + i + "\t")
+    }
+
+    for (i <- Range(0, 5)) {
+      print(i + "\t")
+    }
+    println();
 
     for (i <- 1 to 10; j <- 2 to 20) {
       print(i + "" + j);
