@@ -8,6 +8,7 @@ package org.ceek.scala.chapter05
   **/
 object Scala02_Function {
   //TODO scala中无throws关键字，所以函数中如果有异常发送，也不需要在函数声明时抛出异常
+  //方法：属于类；函数：属于对象
   def test1(): Unit = {
     println("无参无返回值")
   }

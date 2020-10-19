@@ -23,10 +23,29 @@ object Scala03_Function {
 
     println(test);*/
 
-    def test(i: Int) {
+    /*def test(i: Int) {
       return "无return关键字的返回值"
     }
 
-    println(test(1));
+    println(test(1));*/
+
+    /*//如果函数体只有一行代码，可以省略大括号
+    def test(i: Int) = "121212"
+
+    println(test(1));*/
+
+
+    //TODO: 当明确函数没有返回值，那么等号可以省略，省略后，编译器不会将函数体作为函数的返回值
+    //如果函数没有形参列表，可以省略小括号，调用时不能添加小括号
+    def test() {
+      "wojiushiwo"
+    }
+
+    println(test())
+
+    //匿名函数
+    () -> {
+      println("匿名函数")
+    }
   }
 }
