@@ -81,29 +81,16 @@ object Scala05_FunctionHell {
     println(ff3)
     println(ff3())*/
 
-    /*def f1 = "venassa"
-    println(f1)*/
+    def f7(f: (Int, Int) => Int): Int = {
+      f(10, 10)
+    }
 
-    test2(buy)
-    test1(buy)
+    println(f7((x: Int, y: Int) => {
+      x * y
+    }))
+    println(f7((x, y) => {
+      x * y
+    }))
+    println(f7(_ * _))
   }
-
-  var money = 100
-
-  def buy(): Int = {
-    money -= 10
-    money
-  }
-
-  def test2(a: => Int) = {
-    println(a)
-    println(a)
-  }
-
-  def test1(a: Int) = {
-    println(a)
-    println(a)
-  }
-
-
 }
