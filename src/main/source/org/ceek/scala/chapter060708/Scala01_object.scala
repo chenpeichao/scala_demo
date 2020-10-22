@@ -10,7 +10,7 @@ object Scala01_object {
   def main(args: Array[String]): Unit = {
     val user = new User();
 
-    user.username = "zhangsna";
+    user.username = "zhangsan";
 
     println(user.username);
   }
@@ -24,9 +24,8 @@ class User {
   var username: String = null;
 
   var age: Int = 0;
-
   var score: Char = 0;
-  var score1: Byte = 0;
+  var schema: Byte = 0;
 
   def log(): Boolean = {
     true
