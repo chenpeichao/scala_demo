@@ -9,9 +9,12 @@ package org.ceek.java.test;
 public class HelloWorld {
     public static void main(String[] args) {
         int a = 0;
-        a = a++;
-        System.out.println(a);
+        a = a++;    //0
 
-        int i, j = 10;
+        int b = 0;
+        b = ++b;    //1
+        System.out.println(a);      //0
+        System.out.println(b);      //1
+
     }
 }

@@ -1,7 +1,8 @@
 package org.ceek.scala.chapter04
 
-//import scala.util.control.Breaks._
-import scala.util.control.Breaks
+import scala.util.control.Breaks._
+
+//import scala.util.control.Breaks
 
 /**
   *
@@ -24,23 +25,23 @@ object Scala02_break {
     println()
 
 
-    for (i <- 50 to 60) {
-      if (i >= 55) {
-        Breaks.break();
-      }
-    }
-
-    //    val pass = 3
-    //    //break关键字实现
-    //    breakable {
-    //      for(i <- 1 to 10) {
-    //        if(i == pass) {
-    //          break()
-    //        }
-    //        print(i + "\t");
+    //    for (i <- 50 to 60) {
+    //      if (i >= 55) {
+    //        Breaks.break();
     //      }
     //    }
-    //    println()
+
+    val pass = 3
+    //break关键字实现
+    breakable {
+      for (i <- 1 to 10) {
+        if (i == pass) {
+          break()
+        }
+        print(i + "\t");
+      }
+    }
+    println()
     //
     //    //break关键字实现，通过Breaks.breakable，"方法执行完成！会打印"
     //    Breaks.breakable {
