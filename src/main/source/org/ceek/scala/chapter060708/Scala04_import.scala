@@ -15,7 +15,7 @@ package org.ceek.scala.chapter060708
 //import java.{util => _} //咋不起作用
 
 //scala可以在导入类的时候给类起别名
-import java.util.{ArrayList => JavaArrayList}
+import _root_.java.util.{ArrayList => JavaArrayList}
 
 object Scala04_import {
   def main(args: Array[String]): Unit = {
