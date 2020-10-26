@@ -11,21 +11,21 @@ package org.ceek.scala.chapter05
 object Scala07_FUnctionNameAndValue02 {
   def main(args: Array[String]): Unit = {
     var money = 10;
-    def test() = {
-      money -= 1;
+    def test(age: Int) = {
+      money -= age;
       money
     }
 
     def buyByName(count: => Int) {
-      println(count)
+      print(count)
       println(count)
     }
     def buyByValue(count: Int) {
-      println(count)
+      print(count)
       println(count)
     }
 
-    buyByName(test) //9 8
-    buyByValue(test) //7 7
+    buyByName(test(2)) //86
+    buyByValue(test(2)) //44
   }
 }
