@@ -15,7 +15,7 @@ object User08 {
   }
 }
 
-class User08(var userName: String, var age: Int) {
+class User08(userName: String, age: Int) {
   println("名称为：" + userName + "，年龄为：" + age)
   println("调用主构造方法");
 
@@ -29,6 +29,10 @@ class User08(var userName: String, var age: Int) {
     //调用主构造方法的this之前，不能添加代码，报错
     this(userName, 10);
     println("调用辅助构造方法");
+  }
+
+  def this(age: Int, userName: String, password: String) {
+    this(userName);
   }
 }
 
