@@ -1,7 +1,6 @@
 package org.ceek.scala.chapter10
 
-import scala.collection.mutable
-import scala.collection.mutable.ArrayBuffer
+import scala.collection.mutable._
 
 /**
   *
@@ -69,7 +68,7 @@ object Scala02_Array {
     println(drop.mkString("="))*/
 
 
-    //2：可变数组
+    //TODO: 2：可变数组
     var arraybuffer = ArrayBuffer(2, 3, 4, 5, 6, 7, 8, 9);
 
     //2.0：增加
@@ -89,7 +88,7 @@ object Scala02_Array {
     println(arraybuffer.mkString(","))
 
     //3：可变数组和不可变数组的转换
-    val mutableArray: mutable.Buffer[Int] = array.toBuffer
+    val mutableArray: Buffer[Int] = array.toBuffer
     arraybuffer.toArray
   }
 }
