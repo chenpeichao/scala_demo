@@ -8,16 +8,34 @@ package org.ceek.scala.chapter03
   **/
 object Scala03_ifelse {
   def main(args: Array[String]): Unit = {
-    val num = 30;
-    val result = if (num > 40) {
-      "wojiushiwo";
-    }
-    println(result);
+    //    val num = 30;
+    //    val result = if (num > 40) {
+    //      "wojiushiwo";
+    //    }
+    //    println(result);
+    //
+    //    val plus = 20;
+    //    val result2 = if (plus < 30) {
+    //      "wohaishiwo";
+    //    }
+    //    println(result2);
 
-    val plus = 20;
-    val result2 = if (plus < 30) {
-      "wohaishiwo";
+
+    //    def ff() = {
+    //      4
+    //    }
+    //    def fff() = {
+    //      ff _
+    //    }
+
+    def f(ff: (Int) => Int) = {
+      ff(5) + 12
     }
-    println(result2);
+
+    def ff(i: Int) = {
+      i
+    }
+
+    println(f(ff))
   }
 }
