@@ -6,9 +6,10 @@ package org.ceek.java.test;
  */
 public class Java13_switch {
     public static void main(String[] args) {
-        int i = 11;
+        int i = 12;
         //穿透现象
         switch (i) {
+            //当default放在非尾行时，也会发生穿透
             default:
                 System.out.println("default");
             case 10:
@@ -18,7 +19,6 @@ public class Java13_switch {
                 break;
             case 12:
                 System.out.println("third");
-
         }
     }
 }
